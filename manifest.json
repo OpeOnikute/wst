@@ -1,0 +1,30 @@
+{
+    "name": "wst",
+    "version": "1.0",
+    "description": "Share a link to a specific section of website ✨",
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+    },
+    "page_action": {
+        "default_popup": "",
+        "default_title": "wst - Share a link to a specific section of website ✨",
+        "default_icon": {
+            "16": "images/icon16.png",
+            "32": "images/icon32.png",
+            "48": "images/icon48.png",
+            "128": "images/icon128.png"
+        }
+    },
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+    }],
+    "icons": {
+        "16": "images/icon16-active.png",
+        "32": "images/icon32-active.png",
+        "48": "images/icon48-active.png",
+        "128": "images/icon128-active.png"
+    },
+    "manifest_version": 2
+  }

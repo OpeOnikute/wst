@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Osa - Share any part of a website ✨</title>
+</head>
+<body>
+    <style>
+        body {
+            margin: 0;
+        }
+        div.results {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 25px;
+        }
+        .results img {
+            margin: 15px 0;
+            position: relative;
+            width: 100%;
+            max-width: 50px;
+        }
+        a.results-link {
+            font-weight: bold;
+            color: #000;
+            text-decoration: none;
+        }
+        a.results-link:hover {
+            text-decoration: underline;
+        }
+        .btn {
+            width: 100%;
+            max-width: 100px;
+            background-color: rgb(1, 1, 105);
+            color: white;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            padding: 15px 10px;
+            letter-spacing: 1px;
+            cursor: pointer;
+            margin: 5px 0;
+            border-radius: 50px;
+            text-align: center;
+        }
+        .header {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            background: rgb(1, 1, 105);
+            border: 3px solid white;
+            height: 30px;
+            padding: 10px;
+        }
+        img.icon {
+            margin-right: 5px;
+            max-width: 20px;
+        }
+        .header p {
+            color: #fff;
+            letter-spacing: 1px;
+        }
+    </style>
+    <div>
+        <div class="header">
+            <img class="icon" src="/images/icon128-active.png" alt="icon">
+            <p>wst</p>
+        </div>
+        <div id="results" class="results">
+            <div>
+                <img src="/images/icons8-check-80.png" alt="checked sign">
+            </div>
+            <p><a href="" id="results-link" class="results-link" target="_blank"></a></p>
+            <a class="btn" id="btn">Copy url</a>
+        </div>
+        <div id="empty" class="results" style="display:none;width:150px">
+            <h3>You haven't highlighted anything yet :)</h3>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
